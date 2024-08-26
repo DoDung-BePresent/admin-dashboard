@@ -14,13 +14,20 @@ const Login = () => {
     console.log(values);
   };
   return (
-    <div
-      style={{
-        width: "70%",
-      }}
-    >
+    <div>
       <Card>
         <div className="text-center">
+          <img
+            className="mb-3"
+            src={
+              "https://firebasestorage.googleapis.com/v0/b/kanban-2cf22.appspot.com/o/Group%201122.png?alt=media&token=7729da1a-914e-417e-b148-dba255de06a3"
+            }
+            alt=""
+            style={{
+              width: 48,
+              height: 48,
+            }}
+          />
           <Title level={2}>Login to your account</Title>
           <Paragraph type="secondary">
             Welcome back! Please enter your detail.

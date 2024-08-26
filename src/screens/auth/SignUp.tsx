@@ -16,11 +16,22 @@ const SignUp = () => {
   return (
     <div
       style={{
-        width: "70%",
+        width: "60%",
       }}
     >
       <Card>
         <div className="text-center">
+          <img
+            className="mb-3"
+            src={
+              "https://firebasestorage.googleapis.com/v0/b/kanban-2cf22.appspot.com/o/Group%201122.png?alt=media&token=7729da1a-914e-417e-b148-dba255de06a3"
+            }
+            alt=""
+            style={{
+              width: 48,
+              height: 48,
+            }}
+          />
           <Title level={2}>Create an account</Title>
           <Paragraph type="secondary">Start your 30-day free trial</Paragraph>
         </div>
@@ -95,7 +106,7 @@ const SignUp = () => {
         <div className="mt-3 text-center">
           <Space>
             <Text type="secondary">Already have an account?</Text>
-            <Link to={"/login"}>Login</Link>
+            <Link to={"/"}>Login</Link>
           </Space>
         </div>
       </Card>
