@@ -1,15 +1,20 @@
-import { ConfigProvider } from "antd";
+import { ConfigProvider, message } from "antd";
 import Routers from "./routers/Routers";
-import HomeScreen from "./screens/HomeScreen";
+
+// message.config({
+//   top: 30,
+//   duration: 2,
+//   maxCount: 3,
+//   rtl: true,
+//   prefixCls: "my-message",
+// });
 
 function App() {
   return (
     <ConfigProvider
       theme={{
         components: {},
-        token: {
-          colorTextHeading: "#1570EF",
-        },
+        token: {},
       }}
     >
       <Routers />
