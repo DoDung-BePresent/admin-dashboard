@@ -7,8 +7,7 @@ const handleAPI = async (
 ) => {
   return await axiosClient(url, {
     method: method ?? "get",
-    data
+    data,
   });
 };
-
 export default handleAPI;

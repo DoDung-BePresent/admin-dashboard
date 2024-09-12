@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.ant-menu-title-content a,
+.ant-menu-title-content a:hover {
+  text-decoration: none;
+}
