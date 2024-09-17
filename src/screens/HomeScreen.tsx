@@ -6,6 +6,7 @@ import {
   removeAuth,
 } from "../redux/reducers/authReducer";
 import handleAPI from "../apis/handleAPI";
+import { Resizable } from "re-resizable";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -42,6 +43,17 @@ const HomeScreen = () => {
 
   return (
     <div>
+      <Resizable
+        defaultSize={{
+          width: 320,
+          height: 200,
+        }}
+        style={{
+          backgroundColor: "#30cccc",
+        }}
+      >
+        Sample with default size
+      </Resizable>
       <Button onClick={getProducts}>Logout</Button>
     </div>
   );

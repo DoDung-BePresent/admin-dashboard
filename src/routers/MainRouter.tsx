@@ -16,15 +16,20 @@ const { Content, Footer, Header } = Layout;
 const MainRouter = () => {
   return (
     <BrowserRouter>
-      <Layout>
+      <Layout
+      >
         <Affix offsetTop={0}>
           <SiderComponent />
         </Affix>
-        <Layout>
+        <Layout
+          style={{
+            backgroundColor: "white !important",
+          }}
+        >
           <Affix offsetTop={0}>
             <HeaderComponent />
           </Affix>
-          <Content className="mt-3 mb-2 container bg-white">
+          <Content className="mt-3 mb-2 container-fluid bg-white">
             <Routes>
               <Route path="/" element={<HomeScreen />} />
               <Route path="/inventory" element={<Inventories />} />
